@@ -1,0 +1,84 @@
+.timeline_widget {
+  overflow: hidden;
+  .main-headline {
+    padding: 10px 0;
+    margin: 10px auto;
+    width: 75%;
+    text-align: center;
+    background-color: white;
+  }
+
+  .content-top {
+    padding: 7px 0;
+    margin: 20px auto;
+    text-align: center;
+    background-color: white;
+    width: 75%;
+    p {
+      margin: 0;
+    }
+  }
+
+  .row {
+    margin: 30px 0;
+  }
+
+  .row .col-md-6 {
+    width: 45%;
+    padding: 0;
+    text-align: center;
+    &.left {
+      margin-right: 5%;
+      padding-left: 15px;
+    }
+    &.right {
+      margin-left: 5%;
+      padding-right: 15px;
+    }
+  }
+
+  &:after {
+    content: "";
+    background-color: #eee;
+    width: 6px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: -1;
+  }
+
+}
+
+@media (max-width: 991px) {
+  .timeline_widget {
+    &:after {
+      margin: 0 0 0 52px;
+    }
+
+    .main-headline,
+    .content-top {
+      text-align: left;
+      padding-left: 0px;
+      width: auto;
+      margin-left: 52px;
+    }
+
+    .scrivito-icon-box {
+      margin-left: -52px;
+    }
+
+    .row .col-md-6 {
+      &.left,
+      &.right {
+        width: auto;
+        margin-left: 52px;
+        padding-left: 20px;
+        margin-right: 0;
+        padding-right: 0px;
+      }
+    }
+  }
+}

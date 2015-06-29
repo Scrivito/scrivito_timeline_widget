@@ -1,0 +1,14 @@
+<div class="timeline_widget">
+  <% if widget.headline.present? || scrivito_in_editable_view? %>
+    <%= scrivito_tag :h3, widget, :headline, class: 'main-headline' %>
+  <% end %>
+  <% if widget.main_content_top.present? || scrivito_in_editable_view? %>
+    <%= scrivito_tag :div, widget, :main_content_top, class: 'content-top' %>
+  <% end %>
+  <% if widget.main_content_left.present? || widget.main_content_right.present? || scrivito_in_editable_view? %>
+    <div class="row">
+      <%= scrivito_tag :div, widget, :main_content_left, class: 'col-md-6 left' %>
+      <%= scrivito_tag :div, widget, :main_content_right, class: 'col-md-6 right' %>
+    </div>
+  <% end %>
+</div>
