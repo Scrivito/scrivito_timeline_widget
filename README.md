@@ -1,4 +1,4 @@
-scrivito_table_widget
+scrivito_timeline_widget
 =====================
 
 A Widget for Scrivito for a timeline.
