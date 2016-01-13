@@ -1,11 +1,10 @@
-scrivito_timeline_widget
-=====================
+# ScrivitoTimelineWidget
 
-A Scrivito witget to build a timeline.
+A Scrivito widget that represents a nicely styled item of a timeline. Use as many items as required to build the timeline.
 
 ## Installation
 
-Add this line to your application's `Gemfile`:
+Add this line to your application's Gemfile:
 
     gem 'scrivito_timeline_widget'
 
